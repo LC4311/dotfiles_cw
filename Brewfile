@@ -32,6 +32,7 @@ brew 'z'
 
 # Development
 brew 'asdf'
+brew 'modular'
 
 # Apps
 cask '1password'

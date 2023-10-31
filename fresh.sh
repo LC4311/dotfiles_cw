@@ -31,11 +31,11 @@ mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_passwor
 
 # Create a projects directories
 mkdir $HOME/Code
-mkdir $HOME/Herd
+# mkdir $HOME/Herd
 
 # Create Code subdirectories
-mkdir $HOME/Code/blade-ui-kit
-mkdir $HOME/Code/laravel
+# mkdir $HOME/Code/blade-ui-kit
+# mkdir $HOME/Code/laravel
 
 # Clone Github repositories
 ./clone.sh
@@ -43,5 +43,19 @@ mkdir $HOME/Code/laravel
 # Symlink the Mackup config file to the home directory
 ln -s ./.mackup.cfg $HOME/.mackup.cfg
 
+# Restore mackup configs
+mackup restore
+
+# Install asdf python
+asdf plugin add python
+
+# Install asdf node
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+
+# Install asdf Rust
+asdf plugin add Rust
+
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos
+
+
