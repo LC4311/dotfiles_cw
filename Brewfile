@@ -5,20 +5,30 @@ tap 'homebrew/bundle'
 tap 'nicoverbruggen/homebrew-cask'
 
 # Binaries
+brew 'ack'
 brew 'awscli'
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
+brew 'ctop'
 brew 'ffmpeg'
 brew 'gcc'
 brew 'gh'
 brew 'git'
 brew 'grep'
+brew 'htop'
 brew 'httpie'
 brew 'jq' # Used for spatie/visit
+brew 'lsd'
+brew 'libffi'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'svn' # Needed to install fonts
+brew 'tldr'
+brew 'tree'
+brew 'watch'
+brew 'wget'
+brew 'z'
 
 # Development
 brew 'asdf'
@@ -47,12 +57,15 @@ cask 'readwise-ibooks'
 cask 'rectangle'
 cask 'screenflow'
 cask 'slack'
+cask 'spotify'
 cask 'tableplus'
+cask 'telegram'
 cask 'the-unarchiver'
 cask 'transmit'
 cask 'tuple'
 cask 'visual-studio-code'
 cask 'warp'
+cask 'whatsapp'
 cask 'zoom'
 cask 'zotero'
 
